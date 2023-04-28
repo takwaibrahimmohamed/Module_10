@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Module_10</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href='css/bootstrap.css' rel='stylesheet' />
+
+  <link href="css/pe-icon-7-stroke.css" rel="stylesheet" />
+
+    <link href='css/ct-navbar.css' rel='stylesheet' />
+  <link href='css/rotating-card.css' rel='stylesheet' />
+
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+
+  <link href="https://netdna.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
+
+  <script src="https://cdn.rawgit.com/google/code-prettify/master/loader/run_prettify.js"></script>
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css
+">
+
+  <link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css'>
+<link rel='stylesheet prefetch' href='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css'>
+<script src='https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js'></script>
+
+</head>
+
+<style>.owl-buttons {
+  display: none;
+}
+img{
+    width: 100%;
+    height: 100%;
+}
+.owl-carousel:hover .owl-buttons {
+  display: block;
+}
+
+.owl-item {
+  text-align: center;
+}
+
+.owl-theme .owl-controls .owl-buttons div {
+  background: transparent;
+  color: #869791;
+  font-size: 40px;
+  line-height: 300px;
+  margin: 0;
+  padding: 0 60px;
+  position: absolute;
+  top: 0;
+}
+.owl-theme .owl-controls .owl-buttons .owl-prev {
+  left: 0;
+  padding-left: 20px;
+}
+.owl-theme .owl-controls .owl-buttons .owl-next {
+  right: 0;
+  padding-right: 20px;
+}</style>
+<body>
+
+    <div class="container bg-preload" style="margin: auto;">
+   
+
+        <div class="row" >
+          
+            <div class="col-sm-10 col-sm-offset-1">
+             <div class="col-md-4 col-sm-6">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover">
+                                <img src="images/xx_image_01xx.jpg" alt="xx_image_01xx"  title="xx_image_01xx"/>
+                            </div>
+                            <div class="user">
+                                <img class="img-circle" src="images/xx_image_02xx.jpg" alt="xx_image_02xx"  title="xx_image_02xx"/>
+                                <div class="content">
+                                <div class="main">
+                                    <h3 class="name">Andrew Mike</h3>
+                                    <p class="profession">Web Developer</p>
+                                    <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                                        <i class="fa fa-mail-forward"></i> Manual Rotation
+                                    </button>
+                                </div>
+                            </div>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">Andrew Mike</h3>
+                                    <p class="profession">Web Developer</p>
+                                    <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                                        <i class="fa fa-mail-forward"></i> Manual Rotation
+                                    </button>
+                                </div>
+                            </div>
+                        </div> <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h4 class="text-center">Job Description</h4>
+                                    <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+    
+                                    <div class="stats-container">
+                                        <div class="stats">
+                                            <h4>235</h4>
+                                            <p>
+                                                Followers
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h4>114</h4>
+                                            <p>
+                                                Following
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h4>35</h4>
+                                            <p>
+                                                Projects
+                                            </p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                    <i class="fa fa-reply"></i> Back
+                                </button>
+                                <div class="social-links text-center">
+                                    <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                    <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                </div>
+                            </div>
+                        </div> <!-- end back panel -->
+                    </div> <!-- end card -->
+                </div> <!-- end card-container -->
+            </div> <!-- end col sm 3 -->
+    <!--         <div class="col-sm-1"></div> -->
+            <div class="col-md-4 col-sm-6">
+                 <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover">
+                                <img src="images/xx_image_03xx.jpg" alt="xx_image_03xx"  title="xx_image_03xx"/>
+                            </div>
+                            <div class="user">
+                                <img class="img-circle" src="images/xx_image_04xx.jpg" alt="xx_image_04xx"  title="xx_image_04xx"/>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">Andrew Mike</h3>
+                                    <p class="profession">Web Developer</p>
+                                    <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                                        <i class="fa fa-mail-forward"></i> Manual Rotation
+                                    </button>
+                                </div>
+                            </div>
+                        </div> <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h4 class="text-center">Job Description</h4>
+                                    <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+    
+                                    <div class="stats-container">
+                                        <div class="stats">
+                                            <h4>235</h4>
+                                            <p>
+                                                Followers
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h4>114</h4>
+                                            <p>
+                                                Following
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h4>35</h4>
+                                            <p>
+                                                Projects
+                                            </p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                    <i class="fa fa-reply"></i> Back
+                                </button>
+                                <div class="social-links text-center">
+                                    <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                    <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                </div>
+                            </div>
+                        </div> <!-- end back panel -->
+                    </div> <!-- end card -->
+                </div> <!-- end card-container -->
+            </div> <!-- end col sm 3 -->
+    <!--         <div class="col-sm-1"></div> -->
+            <div class="col-md-4 col-sm-6">
+                <div class="card-container manual-flip">
+                    <div class="card">
+                        <div class="front">
+                            <div class="cover">
+                                <img src="images/xx_image_05xx.jpg" alt="xx_image_05xx"  title="xx_image_05xx"/>
+                            </div>
+                            <div class="user">
+                                <img class="img-circle" src="images/xx_image_06xx.jpg" alt="xx_image_06xx"  title="xx_image_06xx"/>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h3 class="name">Andrew Mike</h3>
+                                    <p class="profession">Web Developer</p>
+                                    <p class="text-center">"Lamborghini Mercy <br>Your chick she so thirsty <br>I'm in that two seat Lambo"</p>
+                                </div>
+                                <div class="footer">
+                                    <button class="btn btn-simple" onclick="rotateCard(this)">
+                                        <i class="fa fa-mail-forward"></i> Manual Rotation
+                                    </button>
+                                </div>
+                            </div>
+                        </div> <!-- end front panel -->
+                        <div class="back">
+                            <div class="header">
+                                <h5 class="motto">"To be or not to be, this is my awesome motto!"</h5>
+                            </div>
+                            <div class="content">
+                                <div class="main">
+                                    <h4 class="text-center">Job Description</h4>
+                                    <p class="text-center">Web design, Adobe Photoshop, HTML5, CSS3, Corel and many others...</p>
+    
+                                    <div class="stats-container">
+                                        <div class="stats">
+                                            <h4>235</h4>
+                                            <p>
+                                                Followers
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h4>114</h4>
+                                            <p>
+                                                Following
+                                            </p>
+                                        </div>
+                                        <div class="stats">
+                                            <h4>35</h4>
+                                            <p>
+                                                Projects
+                                            </p>
+                                        </div>
+                                    </div>
+    
+                                </div>
+                            </div>
+                            <div class="footer">
+                                <button class="btn btn-simple" rel="tooltip" title="Flip Card" onclick="rotateCard(this)">
+                                    <i class="fa fa-reply"></i> Back
+                                </button>
+                                <div class="social-links text-center">
+                                    <a href="https://creative-tim.com" class="facebook"><i class="fa fa-facebook fa-fw"></i></a>
+                                    <a href="https://creative-tim.com" class="google"><i class="fa fa-google-plus fa-fw"></i></a>
+                                    <a href="https://creative-tim.com" class="twitter"><i class="fa fa-twitter fa-fw"></i></a>
+                                </div>
+                            </div>
+                        </div> <!-- end back panel -->
+                    </div> <!-- end card -->
+                </div><!-- end card-container -->
+            </div> <!-- end col-sm-3 -->
+            </div> <!-- end col-sm-10 -->
+        </div> <!-- end row -->
+        <div class="space-200"></div>
+    </div>
+
+
+
+<div class="container bg-preload" style="margin: auto;">
+	<div class="row">
+		<div id="owl-example" class="owl-carousel">
+  <div style="width: 300px;height: 300px;"><img  src="images/xx_image_07xx.jpg" alt="xx_image_07xx" title="xx_image_07xx"></div>
+  <div style="width: 300px;height: 300px;"><img  src="images/xx_image_24xx.jpg" alt="xx_image_24xx"  title="xx_image_24xx"></div>
+  <div style="width: 300px;height: 300px;"><img  src="images/xx_image_22xx.jpg" alt="xx_image_22xx"  title="xx_image_22xx"></div>
+  <div style="width: 300px;height: 300px;"><img  src="images/xx_image_10xx.jpg" alt="xx_image_10xx"  title="xx_image_10xx"></div>
+  <div style="width: 300px;height: 300px;"><img  src="images/xx_image_11xx.jpg" alt="xx_image_11xx"  title="xx_image_11xx"></div>
+  <div style="width: 300px;height: 300px;"><img  src="images/xx_image_12xx.jpg" alt="xx_image_12xx"  title="xx_image_12xx"></div>
+  <div style="width: 300px;height: 300px;"><img  src="images/xx_image_13xx.jpg" alt="xx_image_13xx"  title="xx_image_13xx"></div>
+  <div style="width: 300px;height: 300px;"><img  src="images/xx_image_14xx.jpg" alt="xx_image_14xx"  title="xx_image_14xx"></div>
+  <div style="width: 300px;height: 300px;"><img  src="images/xx_image_15xx.jpg" alt="xx_image_15xx"  title="xx_image_15xx"></div>
+  <div style="width: 300px;height: 300px;"><img  src="images/xx_image_16xx.jpg" alt="xx_image_16xx"  title="xx_image_16xx"></div>
+</div>
+	</div>
+</div>
+
+<script>    $(document).ready(function() {
+ 
+  $("#owl-example").owlCarousel({
+      itemsDesktop : [1499,4],
+      itemsDesktopSmall : [1199,3],
+      itemsTablet : [899,2],
+      itemsMobile : [599,1],
+      navigation : true,
+      navigationText : ['<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-left fa-stack-1x fa-inverse"></i></span>','<span class="fa-stack"><i class="fa fa-circle fa-stack-1x"></i><i class="fa fa-chevron-circle-right fa-stack-1x fa-inverse"></i></span>'],
+  });
+  
+});
+
+
+
+function rotateCard(btn){
+        var $card = $(btn).closest('.card-container');
+        console.log($card);
+        if($card.hasClass('hover')){
+            $card.removeClass('hover');
+        } else {
+            $card.addClass('hover');
+        }
+    }
+</script>
+<script src="../module_1/main.js"></script>
+</body>
+</html>
+
